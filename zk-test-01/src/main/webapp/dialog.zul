@@ -1,0 +1,45 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window apply="org.test.zk.dialog.CDialogController" title="Person" border="normal" hflex="min">
+	<vlayout width="287px">
+		<grid hflex="min">
+			<rows>
+				<row>
+					<label id="labelId" value="id" width="150px" />
+					<textbox id="textboxId" value="" width="150px" tabindex="1" />
+				</row>
+				<row>
+					<label id="labelNombre" value="Nombre" width="150px" />
+					<textbox id="textboxNombre" value="" width="150px" tabindex="2" />
+				</row>
+				<row>
+					<label id="labelApellido" value="Apellido" width="150px" />
+					<textbox id="textboxApellido" value="" width="150px" tabindex="3" />
+				</row>
+				<row>
+                    <label id="labelFechadeNacimiento" value="Fecha de Nacimiento" width="150px" />
+                    <datebox id="dateboxFechadeNacimiento"  width="150px"  tabindex="4"/>
+                    
+				</row>
+				<row>
+					<label id="labelGenero" value="genero" width="150px" />
+					<selectbox id="selectboxGenero" tabindex="5"/>
+				</row>
+				
+				<row>
+					<label id="labelComentario" value="Comentario" width="150px" />
+					<textbox id="textboxComentario" value="" width="150px" tabindex="6" rows="5" />
+				</row>
+				
+				
+			</rows>
+		</grid>
+    
+      <div id="divButtomContainer">
+      	<button id="buttonCancelar" label="Cancelar" style="float:right;margin-left:5px;"  />
+      	<button id="buttonAceptar"  label="Aceptar"  style="float:right;margin-left:5px;"  />
+		
+	  </div>
+:     </vlayout>
+	</window>
+</zk>
